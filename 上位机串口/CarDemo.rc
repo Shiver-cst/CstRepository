@@ -1,0 +1,286 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CarDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CarDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CarDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CarDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CARDEMO_DIALOG DIALOGEX 0, 0, 362, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CarDemo"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出程序",IDCANCEL,35,85,50,18
+    COMBOBOX        IDC_COMBO1,63,15,44,43,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口号:",IDC_STATIC,17,15,44,12,SS_CENTERIMAGE
+    PUSHBUTTON      "打开串口",IDC_BUTTON_OPENCOM,15,50,38,16
+    PUSHBUTTON      "关闭串口",IDC_BUTTON_CLOSECOM,69,50,38,14
+    PUSHBUTTON      "前进(1,1)",IDC_BUTTON_FORWARD,152,15,54,16
+    PUSHBUTTON      "停止(0,0)",IDC_BUTTON_STOP,151,50,54,16
+    PUSHBUTTON      "后退(-1,1)",IDC_BUTTON_BACK,151,85,54,16
+    PUSHBUTTON      "加速(+1)",IDC_BUTTON_SPEEDUP,281,15,54,16
+    PUSHBUTTON      "减速(-1)",IDC_BUTTON_SLOWDOWN,282,85,54,16
+    EDITTEXT        IDC_EDIT1,283,50,54,16,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "速度",IDC_STATIC,249,50,21,18,SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CarDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CarDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CarDemo.EXE\0"
+            VALUE "ProductName", "CarDemo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CARDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CARDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x316d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x326d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x336d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x346d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x356d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x366d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x376d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x386d, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f63, 0x396d, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0031, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0032, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0033, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0034, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0035, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0036, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0037, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0038, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x316d, 0x0039, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0030, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0031, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0032, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0033, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0034, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0035, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0036, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0037, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0038, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x326d, 0x0039, 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f63, 0x336d, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CarDemo(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CarDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
